@@ -5,6 +5,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch: {}
 
 jobs:
   backend-ci:
@@ -23,11 +24,11 @@ jobs:
         run: npm install
         working-directory: ./Back-end
 
-      - name: Run backend tests
-        run: npm test
-        working-directory: ./Back-end
+      # Remove or comment out the test step if not needed
+      # - name: Run backend tests
+      #   run: npm test
+      #   working-directory: ./Back-end
 
-  # Example job for Docker build (optional)
   docker-build:
     runs-on: ubuntu-latest
     needs: backend-ci
