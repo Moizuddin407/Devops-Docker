@@ -1,0 +1,32 @@
+.SignupScreen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .SignupSection {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/8542abe019cb162207df7ced1aa7ca7c96eab5d87d9cc856ef14f2434f885723?placeholderIfAbsent=true&apiKey=59b67e67c3874076a87cf06ee3b80a6b");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .SignupOverlay {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+

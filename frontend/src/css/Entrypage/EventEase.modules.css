@@ -1,0 +1,252 @@
+.eventEase {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 749px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+    .heroSection {
+        max-width: 100%;
+    }
+}
+
+.heroImage {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroOverlay {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mainTitle {
+    color: #0a075f;
+    text-align: center;
+    font: 400 64px Alata, sans-serif;
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #0a075f;
+    text-align: center;
+    font: 400 48px Alata, sans-serif;
+    margin-top: 10px;
+}
+
+.description {
+    color: #0a075f;
+    text-align: center;
+    font: 400 24px/32px Alata, sans-serif;
+    margin-top: 10px;
+}
+
+.loginButton {
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    color: #0a075f;
+    background-color: transparent;
+    font: 500 18px DM Sans, sans-serif;
+    border: 2px solid #0a075f;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #0a075f;
+    color: white;
+}
+
+.CCButton {
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 80px;
+    width: 150px;
+    color: #0a075f;
+    background-color: transparent;
+    font: 500 18px DM Sans, sans-serif;
+    border: 2px solid #0a075f;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.CCButton:hover {
+    background-color: #0a075f;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .heroOverlay {
+        width: 90vw;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .mainTitle {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .loginButton {
+        width: 120px;
+        height: 35px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+.footer {
+    background-color: #0a075f;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f3f3f3;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footerContent {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerColumns {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footerColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font: 400 12px/18px 'Alata', sans-serif;
+}
+
+.footerLogo {
+    width: 65px;
+}
+
+.footerDescription {
+    margin-top: 10px;
+    font-size: 12px;
+    max-width: 150px;
+}
+
+.footerLinks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+}
+
+.footerLinkTitle {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footerLinkList {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.footerDivider {
+    width: 100%;
+    max-width: 1000px;
+    height: 1px;
+    margin: 10px 0;
+    background-color: #4c4d8b;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .footerColumns {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerColumn,
+    .footerLinks {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footerLinkTitle {
+        font-size: 12px;
+    }
+
+    .footerLinkList {
+        font-size: 11px;
+    }
+
+    .footerDescription,
+    .copyright {
+        font-size: 11px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}

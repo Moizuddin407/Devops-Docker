@@ -1,0 +1,44 @@
+.header {
+  position: relative;
+  min-height: 713px;
+  width: 100%;
+  color: #fff;
+  font: 500 96px DM Sans, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 100%;
+  padding: 312px 70px 240px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .title {
+    padding: 100px 20px 110px;
+  }
+}
